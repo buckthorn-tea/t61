@@ -7,6 +7,8 @@
     <title>Главное</title>
     <link rel="stylesheet" href="styles/stylemain.css">
     <link rel="stylesheet" href="styles/styleall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/575fc498ad34ad0f411e618dad9ed36a?family=Graphik+LC+Web+Regular" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <header>
@@ -20,10 +22,8 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="#" class="menu__link">НОВОСТИ</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">ПРЕДМЕТЫ</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">ПРОВЕРОЧНЫЕ</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">О НАС</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">FaQ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">О CАЙТЕ</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">ЗАДАЧНИКИ</a></li>
                         </ul>
                     </nav>
@@ -36,48 +36,74 @@
         <div class="container">
             <section class="recomend">
                 <div class="recomend_list">
-                    <h2>Рекомендации</h2>
-                    <span class="recomend_item"><p>#</p></span>
-                    <span class="recomend_item"><p>#</p></span>
-                    <span class="recomend_item"><p>#</p></span>
-                    <span class="recomend_item"><p>#</p></span>
-                    <span class="recomend_item"><p>#</p></span>
+                    <h2 class="name_section">5 рекомендаций</h2>
+                    <div class="recomend_item"><p>Подыши свежим воздухом, мужик.</p></div>
+                    <div class="recomend_item"><p>А клеточки то пустые.</p></div>
+                    <div class="recomend_item"><p>Поспи, каникулы скоро кончатся.</p></div>
+                    <div class="recomend_item"><p>Подучи формулы по физике, чтоб Мавлюда не побила.</p></div>
+                    <div class="recomend_item"><p>Готовься, скоро 1 этап гос олимпиады по математике.</p></div>
                 </div>
             </section>
 
             <section class="themes">
-                <div class="math">
-                    <details class="algebra">
+                <h2 class="name_section">Предметы</h2>
+                <details class="math subject">
+                    <summary class="name">Математика</summary>
+                    <details class="algebra sub-subject">
                         <summary class="name">алгебра</summary>
                         <details class="themes">
                             <summary class="name">theme 1</summary>
-                            <a href="alg11.html">ssylka</a>
+                            <a href="pages\alg11.html">ssylka</a>
                         </details>
                     </details>
-                    <div class="geometry"></div>
-                    <div class="number_theory"></div>
-                    <div class="combinatorics"></div>
-                </div>
+                    <details class="geometry sub-subject">
+                        <summary class="name">Геометрия</summary>
+                    </details>
+                    <details class="number_theory sub-subject">
+                        <summary class="name">Теория Чисел</summary>
+                    </details>
+                    <details class="combinatorics sub-subject">
+                        <summary class="name">Комбинаторика</summary>
+                    </details>
+                </details>
                 
-                <div class="physics">
-                    <div class="mech"></div>
-                    <div class="term"></div>
-                    <div class="opt"></div>
-                    <div class="electr"></div>
-                </div>
+                <details class="physics subject">
+                    <summary class="name">Физика</summary>
+                    <details class="mech sub-subject">
+                        <summary class="name">Механика</summary>
+                    </details>
+                    <details class="term sub-subject">
+                        <summary class="name">Термодинамика</summary>
+                    </details>
+                    <details class="opt sub-subject">
+                        <summary class="name">Оптика</summary>
+                    </details>
+                    <details class="electr sub-subject">
+                        <summary class="name">Электродинамика</summary>
+                    </details>
+                </details>
 
-                <div class="cs">
-                    <div class="algoritm_structure"></div>
-                    <div class="computing"></div>
-                    <div class="programming"></div>
-                    <div class="architecture"></div>
-                </div>
+                <details class="cs subject">
+                    <summary class="name">Информатика</summary>
+                    <details class="algoritm_structure sub-subject">
+                        <summary class="name">Алгоритмы и Структуры данных</summary>
+                    </details>
+                    <details class="programming sub-subject">
+                        <summary class="name">ЯП</summary>
+                    </details>
+                </details>
 
-                <div class="chemistry"></div>
+                <details class="chemistry subject">
+                    <summary class="name">Химия</summary>
+                </details>
                 
-                <div class="rus"></div>
+                <details class="rus subject">
+                    <summary class="name">Русский язык</summary>
+                </details>
 
-                <div class="eng"></div>
+                <details class="eng subject">
+                    <summary class="name">Английский язык</summary>
+                </details>
             </section>
         </div>
     </main>
