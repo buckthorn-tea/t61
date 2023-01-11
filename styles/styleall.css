@@ -13,6 +13,11 @@
 }
 
 a{
-    color: inherit; /**/
     text-decoration: none;
+    color: black;
+}
+
+.name_section{
+    font-family: "Spot Mono", monospace;
+    font-weight: 300;
 }
